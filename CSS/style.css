@@ -1,1 +1,49 @@
-/*STYLES CSS*/
+/*STYLES CSS}*/
+header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img {
+    width: 411px;
+    height: 140px;
+    margin: 33px auto;
+}
+#ppa{
+    font-weight: 270px;
+    font-size: 1.7rem;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+#app {
+    font-weight: 350px;
+    font-size: 2.6rem;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+ul li {
+    list-style: none;
+}
+/*.form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}*/
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#pfyears{
+    color: gray;
+}
+#pfterms{
+    color: rgb(46, 154, 249);
+}
+
+
