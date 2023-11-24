@@ -14,94 +14,102 @@
         triggered by attempting to submit the form without completing it.</p>
     </header>
     <main>
-    <section>
         <h2>Billing Address</h2>
-        <form method="post">
-            <div>
-                <label for="">Date</label>
-                <input type="date" name="" id="">
+        <section class="User_info">  
+        <form method="post" id="Billing_info">
+            <!--= DATE =-->
+            <div class="form">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
             </div>
-            <div>
-                <label for="name">First name</label>
-                <input id="name" type="text" value="" name="name">
-                <label for="name">Last name</label>
-                <input id="name" type="text" value="" name="name">
+            <!--= FIRST NAME-->
+            <div class="form">
+                <label for="1st_name">First name</label>
+                <input id="1st_name" type="text" name="1st_name" required>
+            <!--= LAST NAME =-->
+                <label for="last_name">Last name</label>
+                <input id="last_name" type="text" name="last_name" required>
             </div>
-            <div>
-                <label for="">Username</label>
-                <div><span>@</span></div>
-                <input type="text" name="" id="" placeholder="Username">
+            <!--= USER NAME =-->
+            <div class="form">
+                <label for="user_name">Username</label>
+                <!--CLASS FOR @-->
+                <div class="user_name_@"><span>@</span></div>
+                <input type="text" name="user_name" id="user_name" placeholder="Username">
             </div>
-            <div>
+            <!--EMAIL =-->
+            <div class="form">
                 <label for="Email">Email</label>
-                <input type="email" name="" id="" placeholder="you@example.com">
+                <input type="email" name="email" id="email" placeholder="you@example.com" required>
             </div>
-            <div>
-                <label for="Address">Address</label>
-                <input type="text" name="" id="" placeholder="1234 Main St">
+            <!--ADDRESS-->
+            <div class="form">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="1234 Main St" required>
             </div>
-            <div>
-                <label for="Address2">Address 2</label>
-                <label for="">(Optional)</label>
-                <input type="text" name="" id="" placeholder="Apartment or suite">
+            <!--OPTIONAL ADDRESS2-->
+            <div class="form">
+                <label for="address_2">Address 2 <span class="optional">(Optional)</span></label>
+                <input type="text" name="address_2" id="address_2" placeholder="Apartment or suite" required>
             </div>
-            <div>
+            <!--= COUNTRY =-->
+            <div class="form">
                 <label for="Country">Country</label>
-                <select class="form-select" id="country" name="country">
+                <select class="country" id="country" name="country">
                     <option value="">Choose...</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
                 </select>
+            <!--= STATE =-->
                 <label for="State">State</label>
-                <select class="form-select" id="country" name="country">
+                <select class="state" id="state" name="state">
                     <option value="">Choose...</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
                 </select>
+            <!--= ZIP =-->
                 <label for="Zip-Code">Zip</label>
-                <input type="text" name="" id="">
+                <input type="text" name="Zip-Code" id="Zip-Code">
             </div>
             <hr>
-            <div>
-                <input type="checkbox" name="" id="">
-                <label for="">Shipping address is the same as my billing address</label>
+            <!--= CHECKBOX1 =-->
+            <div class="checkbox_1">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">Shipping address is the same as my billing address</label>
             </div>
-            <div>
-                <input type="checkbox" name="" id="">
-                <label for="">Save this information for next time</label>
+            <div class="checkbox_1">
+                <input type="checkbox" name="checkbox2" id="checkbox2">
+                <label for="checkbox2">Save this information for next time</label>
             </div>
             <hr>
             <h3>Payment</h3>
-            <div>
-                <input type="radio" name="" id="">
-                <label for="">Credit Card</label>
-                <input type="radio" name="" id="">
-                <label for="">Debit Card</label>
-                <input type="radio" name="" id="">
-                <label for="">PayPal</label>
+            <!--= PAYMENT FORM =-->
+            <div class="Payment_form">
+                <input type="radio" name="Payment" id="credit_card" value="credit_card" checked>
+                <label for="credit_card">Credit Card</label>
+                <input type="radio" name="Payment" id="debit_card" value="debit_card">
+                <label for="debit_card">Debit Card</label>
+                <input type="radio" name="Payment" id="PayPal" value="PayPal">
+                <label for="PayPal">PayPal</label>
             </div>
-            <div>
-                <label for="">Name on card</label>
-                <input type="text" name="" id="">
-                <label for="Credit card number">Credit card number</label>
-                <input type="text" name="" id="">
+            <!--CARD DETAILS =-->
+            <div class="Payment_form">
+                <label for="Name_card">Name on card</label>
+                <input type="text" name="card_name" id="card_name" required>
+                <label for="Card_number">Credit card number</label>
+                <input type="text" name="Card_number" id="Card_number" required>
                 <small>Full name as displayed on card</small>
             </div>
-            <div>
-                <label for="">Expiration</label>
-                <input type="text" name="" id="">
-                <label for="">CVV</label>
-                <input type="text" name="" id="">
+            <!--= EXPIRATION =-->
+            <div class="Payment_form">
+                <label for="Expiration">Expiration</label>
+                <input type="text" name="expiration" id="expiration" required>
+                <label for="CVV">CVV</label>
+                <input type="text" name="CVV" id="CVV" required>
             </div>
             <hr>
-            <button type="button">Continue to checkout</button>
+            <!--= BUTTON =-->
+            <button type="button" id="proceed_btn" name="proceed_btn" value="Continue to Checkout">Continue to checkout</button>
         </form>
     </section>
     <section class="card_box">
+        <!--=SIDEBAR =-->
         <div class="cart_header">
             <h1>Your cart</h1>
             <span class="counter_circle">
